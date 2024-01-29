@@ -43,7 +43,6 @@ def logic_question():
             if input_user == questions_index['answer']:
                 question_correct = input_user
                 print(f'\nSua resposta foi {question_correct}. \nVOCÊ ESTÁ CORRETO 💥😎 \n\n')
-                asnwer_result.append(f'')
             else:
                 print('\nSua resposta está incorreta 😟😟\n\n')
         except:
