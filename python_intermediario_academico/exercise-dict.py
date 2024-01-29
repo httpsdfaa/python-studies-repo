@@ -45,8 +45,7 @@ def logic_question():
                 print(f'\nSua resposta foi {question_correct}. \nVOCÊ ESTÁ CORRETO 💥😎 \n\n')
                 asnwer_result.append(f'')
             else:
-                print('\nSua resposta está incorreta \n\n')
-                asnwer_result.append(f'{input_user} é incorreto 😟')
+                print('\nSua resposta está incorreta 😟😟\n\n')
         except:
             print('Algo inesperado aconteceu 😲\n\n')
     
@@ -54,4 +53,4 @@ def logic_question():
 def main():
     logic_question()
 
-# main()
+main()
