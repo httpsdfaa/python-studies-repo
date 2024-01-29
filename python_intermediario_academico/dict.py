@@ -119,7 +119,7 @@ dict_example_copy = dict_example.copy() # valor copiada
 # Mas, não exluído na variável original
 del dict_example_copy['key3']
 print(dict_example_copy, '\n')
-print(dict_example), '\n'
+print(dict_example, '\n')
 
 print(dict_example.pop('key1'), '\n')
 print(dict_example, '\n')
