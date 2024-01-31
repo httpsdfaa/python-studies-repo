@@ -25,8 +25,6 @@ questions = [
 
 def logic_question():
 
-    asnwer_result = []
-
     for questions_index in questions:
         question_correct = ''
         input_user = ''
@@ -34,7 +32,8 @@ def logic_question():
         print('----------------------------------')
 
         print(questions_index['question'], '\n')
-        print(*questions_index['options'], '\n')
+        for option in questions_index['options']:
+            print(option)
         input_user = input('Dentre as opções acima, qual o opção correta? ')
 
         print('----------------------------------')
