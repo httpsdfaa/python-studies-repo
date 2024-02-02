@@ -27,5 +27,9 @@ lista_de_listas_de_inteiros = [
 ]
 
 
+def duplicate(index_lists):
+    s1 = set()
+    for lists in lista_de_listas_de_inteiros[index_lists]:
+        s1.add(lists)
 
-
+duplicate(1)
