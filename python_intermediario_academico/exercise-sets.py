@@ -27,9 +27,16 @@ lista_de_listas_de_inteiros = [
 ]
 
 
-def duplicate(index_lists):
-    s1 = set()
-    for lists in lista_de_listas_de_inteiros[index_lists]:
-        s1.add(lists)
+def duplicate(lists):
+    number_capture = set() # capturar todos os numeros repetidos
 
-duplicate(1)
+    for number in lista_de_listas_de_inteiros[lists]: # loop sobre as listas dentro de listas_de_listas_de_inteiros
+        if number in number_capture: # checar se existe numeros repetidos no sets
+            return number # se existir repetido no sets, retornando-o
+
+        number_capture.add(number) # guardar todos os valores no sets para checagem anterior
+    
+    return -1 # caso não exista repetido no sets
+
+for index, lists in enumerate(lista_de_listas_de_inteiros):
+    print(duplicate(index)) # for para automaticar a chamada das listas na listas_de_listas_de_inteiros
