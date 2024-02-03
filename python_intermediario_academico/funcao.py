@@ -80,7 +80,7 @@ print(*numeros) # DESempacotado
 """
 
 
-
+...
 
 
 
@@ -109,3 +109,54 @@ familia = ['Sandra', 'Denis', 'Deivison', 'Livia', 'Davi']
 for nome in familia:
     print(s1(nome)) # CLOUSURE
     print(s2(nome)) # CLOUSURE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+    Intro à função lambda (função anônima de uma linha)
+    A função lambda é como uma função qualquer em Python.
+    Porém, é uma função anônima que contém apenas uma linha.
+    Tudo deve conter dentro de uma única expressão
+"""
+
+
+# sort ordena uma lista em modo padrão
+# list.sort(reverse=True | False, key=myFunc) --> reverse ordena decrescentemente e key podemos utilizar uma função
+
+lista = [
+    {'nome': 'Luiz', 'sobrenome': 'miranda'},
+    {'nome': 'Maria', 'sobrenome': 'Oliveira'},
+    {'nome': 'Daniel', 'sobrenome': 'Silva'},
+    {'nome': 'Eduardo', 'sobrenome': 'Moreira'},
+    {'nome': 'Aline', 'sobrenome': 'Souza'},
+]
+
+def exibir(lista_param):
+    for dicts_lista in lista_param:
+        print('\n',dicts_lista)
+    print()
+
+lista.sort(key=lambda item: item['nome']) # ordenando por nome
+exibir(lista)
+
+l1 = sorted(lista, key=lambda item: item['sobrenome']) # cópia rasa
+exibir(l1)
+
+def executa(funcao, *args):
+    return funcao(*args)
+
+print(
+    executa(lambda *args: sum(args), 1,2,3,4,5,6,7,8,9,10)
+)
