@@ -109,7 +109,7 @@ def desempacotamento():
     print(nome2)
 
     print('FIM DESEMPACOTAMENTO')
-# desempacotamento()
+desempacotamento()
 
 
 
@@ -147,4 +147,4 @@ def tupla():
 
     print('----FIM TUPLA----')
 
-tupla()
+# tupla()

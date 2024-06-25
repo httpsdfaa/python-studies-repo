@@ -57,7 +57,7 @@ print(type(person_class))
 print(person['name'])
 
 for chave in person:
-    print(chave, person[chave])
+    print(f'{chave}: {person[chave]}')
 
 
 
@@ -76,7 +76,8 @@ print(manipulate)
 
 
 # TRATANDO EXCESSÃO CASO UMA KEY NÃO EXISTA
-print(manipulate.get('key_not_exist', 'Chvave não existe'))
+manipulate['key_2'] = 'adicao'
+print(manipulate.get('key_2', 'Chave não existe')) # se a chave não existir o valor padrão executará
 
 
 
@@ -105,9 +106,10 @@ dict_example = {
 }
 
 print(dict_example.__len__(), '\n') # quantidade de chaves
-print(dict_example.keys(), '\n') # iterável com as chaves
-print(dict_example.values(), '\n') # iterável com os valores
-print(dict_example.items(), '\n') # retorna chave com o valor
+print(len(dict_example)) # outra forma de ver tamanho
+print(dict_example.keys(), 'keys \n') # iterável com as chaves
+print(dict_example.values(), 'values \n') # iterável com os valores
+print(dict_example.items(), 'key and values \n') # retorna chave com o valor
 for chave, valor in dict_example.items():
     print(chave, valor)
 

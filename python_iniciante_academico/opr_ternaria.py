@@ -3,4 +3,4 @@
     <valor> if <condicao> else <condicao>
 """
 
-print('Deivison' if False else 'outro valor')
+print('Deivison' if 'Outro valor' else False)

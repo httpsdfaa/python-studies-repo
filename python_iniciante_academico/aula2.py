@@ -3,7 +3,7 @@ print(True != False)
 
 print(int('1')) # CONVERTENDO STRING PARA INTEIRO
 print(int('1') + 1)
-print(str(1502) + 'Deivison') # ONVERTENDO INTEIRO EM STRING E CONCATENANDO STRING
+print(str(1502) + 'Deivison') # CONVERTENDO INTEIRO EM STRING E CONCATENANDO STRING
 print(bool(' '))
 
 """
@@ -21,7 +21,7 @@ data_nascimento_mes = 5
 data_nascimento_ano = 1950
 
 print(nome_var, idade_var, end=" ") #OUTPUT --> Deivison Fernandes x
-print(data_nascimento_dia, data_nascimento_mes, data_nascimento_ano, sep="/", end=".")
+print(data_nascimento_dia, data_nascimento_mes, data_nascimento_ano, sep="/", end=". ")
 
 
 exponenciacao = 3 ** 3 
@@ -29,8 +29,9 @@ modulo = 2 % 5 # Resto da divisao
 divisao_inteira = 5 // 2
 
 print(
-    'Exponenciação:', exponenciacao,
-    'Modulo:', modulo,
+    '\n'
+    'Exponenciação:', exponenciacao,'\n'
+    'Modulo:', modulo,'\n'
     'Divisão inteira:', divisao_inteira
 )
 

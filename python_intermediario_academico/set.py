@@ -5,6 +5,12 @@
     Representados graficamente pelo o diagrama de Venn
     Sets em Python são mutáveis, porém aceitam apenas tipos imutáveis como valor interno
 
+    TIPOS IMUTÁVEIS EM PYTHON
+        Bool
+        Int
+        Float
+        Tupla
+        Str
 
 
     Sets são eficientes para remover valores duplicados de iteráveis
